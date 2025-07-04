@@ -12,13 +12,15 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
     <Card className="h-full">
       <CardHeader>
         <div className="flex items-start gap-4">
+        <div className="w-24 h-24 flex items-center justify-center shrink-0">
           <Image
-            src={experience.logo || "/placeholder.svg"}
+            src={experience.logo}
             alt={`${experience.company} logo`}
-            width={48}
-            height={48}
-            className="rounded-lg border"
+            width={96}
+            height={96}
+            className="rounded-lg object-contain"
           />
+        </div>
           <div className="flex-1">
             <h3 className="text-lg font-semibold">
               {experience.position}

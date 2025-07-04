@@ -4,45 +4,17 @@ export const workExperiences: WorkExperience[] = [
   {
     id: "1",
     company: "PT. Eksa Digital Agency",
-    position: "Programmer Staff",
+    position: "Internal Programmer Staff",
     duration: "April 2025 - Present",
     location: "Tegal, Indonesia",
     description: [
-      "Test",
-      "Test 2"
+      "Developed a responsive KPI dashboard with React, enabling real-time data visualization and improving decision-making for stakeholders",
+      "Designed and implemented secure RESTful APIs to manage storage, retrieval, and encryption of sensitive company data, ensuring compliance with security policies",
+      "Led a database migration project, optimizing MySQL schema design with improved normalization, indexing, and table relationships to enhance query performance",
+      "Maintained comprehensive documentation for code changes, including detailed commit messages and pull request descriptions to improve team collaboration and knowledge sharing"
     ],
     technologies: ["React", "Express", "MySQL"],
     logo: "/logo-eda.png"
-  },
-  {
-    id: "2",
-    company: "StartupXYZ",
-    position: "Frontend Developer",
-    duration: "Jun 2020 - Dec 2021",
-    location: "Remote",
-    description: [
-      "Built responsive web applications using React and Next.js",
-      "Optimized application performance achieving 95+ Lighthouse scores",
-      "Integrated third-party APIs and payment systems",
-      "Participated in agile development processes",
-    ],
-    technologies: ["React", "Next.js", "JavaScript", "Tailwind CSS", "Stripe API"],
-    logo: "/placeholder.svg?height=40&width=40",
-  },
-  {
-    id: "3",
-    company: "Digital Agency Pro",
-    position: "Junior Web Developer",
-    duration: "Aug 2019 - May 2020",
-    location: "New York, NY",
-    description: [
-      "Developed custom WordPress themes and plugins",
-      "Created responsive websites for small to medium businesses",
-      "Collaborated with designers to implement pixel-perfect designs",
-      "Maintained and updated existing client websites",
-    ],
-    technologies: ["WordPress", "PHP", "JavaScript", "HTML/CSS", "MySQL"],
-    logo: "/placeholder.svg?height=40&width=40",
   },
 ]
 

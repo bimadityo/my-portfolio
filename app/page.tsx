@@ -13,7 +13,7 @@ export default function HomePage() {
             Hi, I&apos;m <span className="text-primary">Bima Adityo Kurniawan</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-            Full Stack Developer passionate about creating exceptional digital experiences
+            A Full Stack Developer passionate about exploring new things
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Badge variant="secondary" className="text-sm px-3 py-1">
@@ -47,12 +47,10 @@ export default function HomePage() {
           <div>
             <h2 className="text-3xl font-bold mb-6">About Me</h2>
             <p className="text-muted-foreground mb-4">
-              I`m a passionate full stack developer with over 4 years of experience building scalable web applications.
-              I love turning complex problems into simple, beautiful, and intuitive solutions.
+              I&apos;m an engineering graduate and a passionate full-stack developer with hands-on experience building scalable web applications. I enjoy transforming complex problems into clean, user-friendly solutions.
             </p>
             <p className="text-muted-foreground mb-6">
-              When I`m not coding, you can find me exploring new technologies, contributing to open source projects, or
-              sharing my knowledge through technical writing and mentoring.
+              I&apos;m always eager to learn new technologies and open to relocating for new opportunities and experiences.
             </p>
             <div className="flex items-center gap-2 text-muted-foreground mb-4">
               <MapPin className="h-4 w-4" />
@@ -113,7 +111,7 @@ export default function HomePage() {
             <div className="border rounded-lg p-6 hover:shadow-md transition-shadow">
               <h3 className="text-lg font-semibold mb-2 group-hover:text-primary">Work Experience</h3>
               <p className="text-muted-foreground text-sm">
-                1+ years of professional development experience across various companies
+                My professional development journey across various companies
               </p>
             </div>
           </Link>
@@ -129,7 +127,7 @@ export default function HomePage() {
             <div className="border rounded-lg p-6 hover:shadow-md transition-shadow">
               <h3 className="text-lg font-semibold mb-2 group-hover:text-primary">Certifications</h3>
               <p className="text-muted-foreground text-sm">
-                Professional certifications from AWS, Google Cloud, and Meta
+                Professional certifications from reputable institutions
               </p>
             </div>
           </Link>
