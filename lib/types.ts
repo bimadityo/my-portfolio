@@ -18,7 +18,6 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
   image: string;
-  featured: boolean;
 }
 
 export interface Certification {

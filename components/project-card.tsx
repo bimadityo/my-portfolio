@@ -14,19 +14,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card className="h-full flex flex-col">
       <CardHeader className="p-0">
-          <div className="relative aspect-video">
-            <Image
-              src={project.image || "/placeholder.svg"}
-              alt={project.title}
-              fill
-              className="object-cover rounded-t-lg"
-            />
-            {project.featured && (
-              <Badge className="absolute top-2 right-2" variant="default">
-                Featured
-              </Badge>
-            )}
-          </div>
+        <div className="relative aspect-video">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover"
+          />
+        </div>
       </CardHeader>
       <CardContent className="flex-1 flex flex-col p-6">
         <h3 className="text-lg font-semibold mb-2">
@@ -62,5 +57,5 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

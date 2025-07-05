@@ -1,17 +1,17 @@
-import { Certification } from "@/lib/types";
-import { Card, CardContent, CardHeader } from "./ui/card";
-import Image from "next/image";
-import { Calendar, ExternalLink } from "lucide-react";
-import { Badge } from "./ui/badge";
-import { Button } from "./ui/button";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import { ExternalLink, Calendar } from "lucide-react"
+import type { Certification } from "@/lib/types"
 
 interface CertificationCardProps {
-  certification: Certification;
+  certification: Certification
 }
 
 export default function CertificationCard({ certification }: CertificationCardProps) {
-  const isExpired = certification.expiryDate && new Date (certification.expiryDate) < new Date();
+  const isExpired = certification.expiryDate && new Date(certification.expiryDate) < new Date()
 
   return (
     <Card className="h-full">
@@ -25,24 +25,16 @@ export default function CertificationCard({ certification }: CertificationCardPr
             className="rounded-lg border"
           />
           <div className="flex-1">
-            <h3 className="text-lg font-semibold">
-              {certification.name}
-            </h3>
-            <p className="text-primary font-medium">
-              {certification.issuer}
-            </p>
+            <h3 className="text-lg font-semibold">{certification.name}</h3>
+            <p className="text-primary font-medium">{certification.issuer}</p>
             <div className="flex items-center gap-2 mt-2">
               <Calendar className="h-4 w-4 text-muted-foreground" />
-              <span className="text-sm text-muted-foreground">
-                Issued: {certification.issueDate}
-              </span>
+              <span className="text-sm text-muted-foreground">Issued: {certification.issueDate}</span>
             </div>
             {certification.expiryDate && (
               <div className="flex items-center gap-2 mt-1">
                 <Calendar className="h-4 w-4 text-muted-foreground" />
-                <span className="text-sm text-muted-foreground">
-                  Expires: {certification.expiryDate}
-                </span>
+                <span className="text-sm text-muted-foreground">Expires: {certification.expiryDate}</span>
                 {isExpired && (
                   <Badge variant="destructive" className="text-xs">
                     Expired
@@ -54,13 +46,9 @@ export default function CertificationCard({ certification }: CertificationCardPr
         </div>
       </CardHeader>
       <CardContent>
-        <p className="text-sm text-muted-foreground mb-4">
-          {certification.description}
-        </p>
+        <p className="text-sm text-muted-foreground mb-4">{certification.description}</p>
         {certification.credentialId && (
-          <p className="text-xs-muted-foreground">
-            Credential ID: {certification.credentialId}
-          </p>
+          <p className="text-xs text-muted-foreground mb-4">Credential ID: {certification.credentialId}</p>
         )}
         {certification.verificationUrl && (
           <Button variant="outline" size="sm" asChild>

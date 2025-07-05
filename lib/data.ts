@@ -21,39 +21,25 @@ export const workExperiences: WorkExperience[] = [
 export const projects: Project[] = [
   {
     id: "1",
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with admin dashboard",
+    title: "EnergyMate",
+    description: "AI-powered energy assistant with personalized recommendations",
     longDescription:
-      "A comprehensive e-commerce platform built with Next.js and Node.js, featuring user authentication, payment processing, inventory management, and an admin dashboard for order management.",
-    technologies: ["Next.js", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
-    githubUrl: "https://github.com/username/ecommerce-platform",
-    liveUrl: "https://ecommerce-demo.vercel.app",
-    image: "/placeholder.svg?height=200&width=300",
-    featured: true,
+      "A time-series machine learning platform that predicts household electricity usage and provides optimization recommendations. Processes 2M+ data rows with 4 years of historical time-series data, achieving <0.01 MAE & RMSE for accurate 24/7 predictions. Helps users optimize their electrical efficiency through AI-powered insights",
+    technologies: ["React", "ShadCN UI", "Flask", "Google Vertex AI"],
+    githubUrl: "https://github.com/bagusangkasawan/CapstoneProjectLaskarAI",
+    liveUrl: "https://energymate.netlify.app",
+    image: "/energymate.png",
   },
   {
     id: "2",
-    title: "Task Management App",
-    description: "Collaborative project management tool with real-time updates",
+    title: "Counter Begal",
+    description: "Community-based crime reporting platform with interactive mapping",
     longDescription:
-      "A modern task management application with real-time collaboration features, drag-and-drop functionality, team management, and progress tracking.",
-    technologies: ["React", "Firebase", "Material-UI", "Socket.io"],
-    githubUrl: "https://github.com/username/task-manager",
-    liveUrl: "https://taskmanager-demo.vercel.app",
-    image: "/placeholder.svg?height=200&width=300",
-    featured: true,
-  },
-  {
-    id: "3",
-    title: "Weather Dashboard",
-    description: "Beautiful weather app with location-based forecasts",
-    longDescription:
-      "A responsive weather dashboard that provides detailed weather information, forecasts, and interactive maps using various weather APIs.",
-    technologies: ["Vue.js", "OpenWeather API", "Chart.js", "CSS3"],
-    githubUrl: "https://github.com/username/weather-dashboard",
-    liveUrl: "https://weather-dashboard-demo.vercel.app",
-    image: "/placeholder.svg?height=200&width=300",
-    featured: false,
+      "A web-based interactive map application that enables citizens to report and visualize motorcycle theft (begal) incidents in real-time. Features include crowd-sourced crime reporting with detailed incident data (reporter information, location, description, and photos), interactive heatmaps of high-risk areas, and community alert systems to enhance public safety awareness.",
+    technologies: ["Vanilla Javascript", "MapLibre", "Express.js", "MongoDB", "Amazon AWS"],
+    githubUrl: "https://github.com/bimadityo/counter-begal",
+    liveUrl: "https://counter-begal.netlify.app",
+    image: "/counter-begal.png",
   },
 ]
 

@@ -7,12 +7,9 @@ export const metadata = {
 }
 
 export default function ProjectsPage() {
-  const featuredProjects = projects.filter((project) => project.featured)
-  const otherProjects = projects.filter((project) => !project.featured)
-
   return (
     <div className="container mx-auto px-4 py-16">
-      <div className="max-w-6xl max-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">
             Projects
@@ -22,31 +19,13 @@ export default function ProjectsPage() {
           </p>
         </div>
 
-        {featuredProjects.length > 0 && (
-          <div className="mb-12">
-            <h2 className="text-2xl font-semibold mb-6">
-              Featured Projects
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {featuredProjects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
-              ))}
-            </div>
+        <div className="flex justify-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+            {projects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
           </div>
-        )}
-
-        {otherProjects.length > 0 && (
-          <div>
-            <h2 className="text-2xl font-semibold mb-6">
-              Other Projects
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {otherProjects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
-              ))}
-            </div>
-          </div>
-        )}
+        </div>
       </div>
     </div>
   )
