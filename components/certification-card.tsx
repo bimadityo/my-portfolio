@@ -15,37 +15,38 @@ export default function CertificationCard({ certification }: CertificationCardPr
 
   return (
     <Card className="h-full">
-      <CardHeader>
-        <div className="flex items-start gap-4">
+      <CardHeader className="flex flex-col items-center">
+        <div className="w-full relative aspect-[3/2] mb-4 overflow-hidden rounded-xl border shadow-sm">
           <Image
             src={certification.image || "/placeholder.svg"}
             alt={`${certification.name} certificate`}
-            width={64}
-            height={64}
-            className="rounded-lg border"
+            fill
+            className="object-fit"
+            sizes="(max-width: 768px) 100vw, 33vw"
+            priority
           />
-          <div className="flex-1">
-            <h3 className="text-lg font-semibold">{certification.name}</h3>
-            <p className="text-primary font-medium">{certification.issuer}</p>
-            <div className="flex items-center gap-2 mt-2">
-              <Calendar className="h-4 w-4 text-muted-foreground" />
-              <span className="text-sm text-muted-foreground">Issued: {certification.issueDate}</span>
-            </div>
-            {certification.expiryDate && (
-              <div className="flex items-center gap-2 mt-1">
-                <Calendar className="h-4 w-4 text-muted-foreground" />
-                <span className="text-sm text-muted-foreground">Expires: {certification.expiryDate}</span>
-                {isExpired && (
-                  <Badge variant="destructive" className="text-xs">
-                    Expired
-                  </Badge>
-                )}
-              </div>
-            )}
+        </div>
+        <div className="w-full text-center">
+          <h3 className="text-xl font-semibold">{certification.name}</h3>
+          <p className="text-primary font-medium">{certification.issuer}</p>
+          <div className="flex justify-center items-center gap-2 mt-2 text-muted-foreground text-sm">
+            <Calendar className="h-4 w-4" />
+            <span>Issued: {certification.issueDate}</span>
           </div>
+          {certification.expiryDate && (
+            <div className="flex justify-center items-center gap-2 mt-1 text-muted-foreground text-sm">
+              <Calendar className="h-4 w-4" />
+              <span>Expires: {certification.expiryDate}</span>
+              {isExpired && (
+                <Badge variant="destructive" className="text-xs ml-1">
+                  Expired
+                </Badge>
+              )}
+            </div>
+          )}
         </div>
       </CardHeader>
-      <CardContent>
+      <CardContent className="text-center">
         <p className="text-sm text-muted-foreground mb-4">{certification.description}</p>
         {certification.credentialId && (
           <p className="text-xs text-muted-foreground mb-4">Credential ID: {certification.credentialId}</p>
