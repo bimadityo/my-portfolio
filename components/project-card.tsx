@@ -19,7 +19,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             src={project.image}
             alt={project.title}
             fill
-            className="object-cover"
+            className="object-fit"
           />
         </div>
       </CardHeader>
