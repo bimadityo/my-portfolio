@@ -52,7 +52,7 @@ export const certifications: Certification[] = [
     credentialId: "NVP75RN6VXR0",
     verificationUrl: "https://www.dicoding.com/certificates/NVP75RN6VXR0",
     description: "Developed practical skills in implementing machine learning models for real-world problem-solving.",
-    image: "/certificates/applied-machine-learning.jpg"
+    image: "/certificates/dicoding-applied-machine-learning.jpg"
   },
   {
     id: "2",
@@ -60,21 +60,49 @@ export const certifications: Certification[] = [
     issuer: "Dicoding Indonesia",
     issueDate: "December 2024",
     credentialId: "DCD/DB24/DIST/XXIV-12/030",
-    description: "Mastered full-stack development with modern frameworks and best practices for building scalable applications",
-    image: "/certificates/bootcamp-dicoding.jpg",
+    description: "Mastered full-stack web development with best practices over a 6-month bootcamp.",
+    image: "/certificates/bootcamp-dicoding.jpg"
   },
   {
     id: "3",
+    name: "Intermediate Native Android App Development",
+    issuer: "Dicoding Indonesia",
+    issueDate: "September 2023",
+    credentialId: "NVP75RN6VXR0",
+    verificationUrl: "https://www.dicoding.com/certificates/NVP75RN6VXR0",
+    description: "Developed practical skills in building native Android applications, focusing on intermediate-level concepts and best practices.",
+    image: "/certificates/dicoding-android-intermediate.jpg"
+  },
+  {
+    id: "4",
+    name: "Cloud Computing",
+    issuer: "Bangkit led by Google, Goto, and Traveloka",
+    issueDate: "July 2021",
+    description: "Completed a 6-month apprenticeship, gaining proficiency in Google Cloud Platform services for cloud infrastructure and operations.",
+    image: "/certificates/bangkit-cloud-computing.jpg"
+  },
+  {
+    id: "5",
     name: "Google IT Support Specialization",
     issuer: "Google - Coursera",
-    issueDate: "January 2023",
+    issueDate: "March 2021",
     credentialId: "YTSEBLSAPB2Z",
     verificationUrl: "https://www.coursera.org/account/accomplishments/specialization/certificate/YTSEBLSAPB2Z",
     description: "Acquired foundational IT support skills including troubleshooting, networking, and system administration.",
     image: "/certificates/google-it-support.jpg",
   },
   {
-    id: "4",
+    id: "6",
+    name: "Google IT Automation with Python",
+    issuer: "Google - Coursera",
+    issueDate: "March 2021",
+    credentialId: "VZMNUXCU4C2N",
+    verificationUrl: "https://www.coursera.org/account/accomplishments/specialization/certificate/VZMNUXCU4C2N",
+    description: "Mastered Python for IT automation, including scripting, configuration management, and cloud interaction.",
+    image: "/certificates/google-it-automation.jpg",
+  },
+  {
+    id: "7",
     name: "EF SET English Certificate 81/100 (C2 Proficient)",
     issuer: "English First (EF)",
     issueDate: "March 2021",
